@@ -4,7 +4,7 @@ NAME=$(basename `pwd`)
 
 if [ -z "$1" ]
 then
-	VERSION=1.0.1
+	VERSION=1.0.2
 else
 	VERSION=$1
 fi
@@ -17,7 +17,7 @@ else
 fi
 
 
-# Install convert 5K to 2K
+# Install convert 5K to FullHD
 sudo dnf install ImageMagick
 rm -rf $NAME-$VERSION
 mkdir $NAME-$VERSION

@@ -4,9 +4,9 @@
 Name          : RPMNAME
 Version       : RPMVERSION
 Release       : RPMRELEASE.%{disttype}%{distnum}
-Summary       : MacOS X Backgrounds 
+Summary       : MacOS X Backgrounds (Full HD)
 Group         : User Interface/X
-License       : GPL
+License       : Unknown
 URL           : https://512pixels.net/projects/default-mac-wallpapers-in-5k/
 Source0       : %{name}-%{version}.tgz
 Source1       : %{name}.xml
@@ -18,8 +18,15 @@ BuildArch     :	noarch
 %define debug_package %{nil}
 
 %description
+All credits to 512PIXELS:
+"Every Default macOS Wallpaper – in Glorious 5K Resolution
 Every major version of Mac OS X macOS has come with a new default wallpaper.
 As you can see, I have collected them all here.
+While great in their day, the early wallpapers are now quite small in the
+world of 5K iMac with Retina displays.
+Major props to the world-class designer who does all the art of Relay FM, 
+the mysterious @forgottentowel, for upscaling many of these for modern screens."
+Note: Images as been resize from 5K to FullHD
 
 %prep
 %setup -q
