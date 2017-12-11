@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+        <name>Cheetah e Puma</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Cheetah_Puma.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Jaguar</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Jaguar.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Panther</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Panther.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Tiger</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Tiger.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Leopard</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Leopard.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>SnowLeopard</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/SnowLeopard.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Lion</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Lion.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>MountainLion</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/MountainLion.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Mavericks</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Mavericks.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Yosemite</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Yosemite.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>ElCapitan</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/ElCapitan.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Sierra</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/Sierra.png</filename>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>HighSierra</name>
+	<filename>/usr/share/backgrounds/macosx-backgrounds/default/HighSierra.png</filename>
+    </wallpaper>
+</wallpapers>
