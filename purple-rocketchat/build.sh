@@ -23,7 +23,7 @@ if [ ! -f $NAME-$VERSION.tgz ]
 then
 	hg clone https://bitbucket.org/EionRobb/$NAME/
 	mv  $NAME $NAME-$VERSION
-	tar --exclude='.hg*' czvf $NAME-$VERSION.tgz $NAME-$VERSION
+	tar --exclude='.hg*' -czvf $NAME-$VERSION.tgz $NAME-$VERSION
 fi
 
 if ! [ -d ~/rpmbuild/SOURCES ]
