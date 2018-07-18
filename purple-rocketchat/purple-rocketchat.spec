@@ -9,7 +9,7 @@ Group         : Applications/Internet
 License       : GPL3
 URL           : https://bitbucket.org/EionRobb/purple-rocketchat
 Source0       : %{name}-%{version}.tgz
-BuildRequires : tar libpurple-devel libmarkdown-devel json-glib-devel glib2
+BuildRequires : tar libpurple-devel libmarkdown-devel json-glib-devel glib2 mercurial
 Requires      : libpurple
 
 %description
