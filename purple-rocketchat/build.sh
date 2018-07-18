@@ -2,13 +2,6 @@
 
 NAME=$(basename `pwd`)
 
-if [ -z "$1" ]
-then
-	RELEASE=1
-else
-	RELEASE=$1
-fi
-
 rpm -qi mercurial > /dev/null
 
 if [ $? -ne 0 ]
@@ -17,14 +10,32 @@ then
 	exit 1
 fi
 
-VERSION=`hg id -i https://bitbucket.org/EionRobb/$NAME/`
-
-if [ ! -f $NAME-$VERSION.tgz ]
+if [ -f "$NAME" ]
 then
-	hg clone https://bitbucket.org/EionRobb/$NAME/
-	mv  $NAME $NAME-$VERSION
-	tar --exclude='.hg*' -czvf $NAME-$VERSION.tgz $NAME-$VERSION
+	rm -rf $NAME
 fi
+
+hg clone https://bitbucket.org/EionRobb/$NAME/
+cd $NAME
+REVISION_ID=$(hg id -i)
+REVISION_NUMBER=$(hg id -n)
+VERSION=0.9.$(date +%Y.%m.%d).git.r$REVISION_NUMBER.$REVISION_ID
+RELEASE=1
+cd ..
+
+if [ -f "$NAME-$VERSION.tgz" ]
+then
+	rm -f $NAME-$VERSION.tgz
+fi
+
+if [ -d "$NAME-$VERSION" ]
+then
+	rm -rf $NAME-$VERSION
+fi
+
+mv  $NAME $NAME-$VERSION
+#tar --exclude='.hg*' -czvf $NAME-$VERSION.tgz $NAME-$VERSION
+tar -czvf $NAME-$VERSION.tgz $NAME-$VERSION
 
 if ! [ -d ~/rpmbuild/SOURCES ]
 then
