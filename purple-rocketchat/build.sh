@@ -39,7 +39,7 @@ tar -czvf $NAME-$VERSION.tgz $NAME-$VERSION
 
 if ! [ -d ~/rpmbuild/SOURCES ]
 then
-	mkdir ~/rpmbuild/SOURCES
+	mkdir -p ~/rpmbuild/SOURCES
 fi
 
 cp -f $NAME-$VERSION.tgz ~/rpmbuild/SOURCES/
