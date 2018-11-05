@@ -14,7 +14,7 @@ else
 fi
 
 CURRENT_PWD=$(pwd)
-RPM_URL=https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Workstation/source/tree/Packages/f/freetype-$1-$2.fc29.src.rpm
+RPM_URL=https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Workstation/source/tree/Packages/f/freetype-$1-$2.fc30.src.rpm
 MY_RELEASE=$(($RELEASE +100))
 
 rpm -ivh $RPM_URL
