@@ -1,5 +1,5 @@
 Name:    fontconfig-enhanced
-Version: 1.0.0
+Version: 1.3.0
 Release: 1%{?dist}
 Summary: Enhanced default settings for Fontconfig and FreeType
 
