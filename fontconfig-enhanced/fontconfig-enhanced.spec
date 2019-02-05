@@ -9,7 +9,6 @@ License: Public Domain
 BuildArch:     noarch
 BuildRequires: fontpackages-devel
 Requires:      fontpackages-filesystem
-Requires:      freetype-freeworld
 Requires:      freetype-subpixel
 
 %description
