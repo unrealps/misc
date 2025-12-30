@@ -10,17 +10,13 @@
         "github.copilot",
         "github.copilot-chat",
         "github.vscode-github-actions",
-        "github.vscode-pull-request-github"
+        "github.vscode-pull-request-github",
+        "golang.go"
       ]
     }
   },
   "mounts": [
     "source=${env:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
     "source=${env:HOME}/.ssh,target=/root/.ssh,type=bind",
-    "source=${env:HOME}/.gnupg,target=/root/.gnupg,type=bind"
-  ],
-  "runArgs": [
-    "-v", "/run/user/1000/gnupg/S.gpg-agent:/gnupg/S.gpg-agent",
-    "-e", "GPG_AGENT_INFO=/gnupg/S.gpg-agent"
   ]
 }
